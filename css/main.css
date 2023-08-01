@@ -510,6 +510,10 @@ input[type=checkbox], input[type=radio] {
   padding: 0;
 }
 
+main {
+  position: relative;
+}
+
 ul {
   list-style: none;
 }
@@ -849,8 +853,11 @@ img {
   margin-top: 6px;
 }
 
+.map {
+  padding: 150px 20px;
+}
+
 .footer {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;

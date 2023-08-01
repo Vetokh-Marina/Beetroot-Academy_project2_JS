@@ -13,6 +13,10 @@
 
 }
 
+main {
+   position: relative;
+}
+
 ul {
    list-style: none;
 }
@@ -350,7 +354,9 @@ img {
 }
 
 
-
+.map {
+   padding: 150px 20px;
+}
 
 
 
@@ -358,7 +364,6 @@ img {
 
 
 .footer {
-   position: relative;
    @include flex(center, center, row, 369px);
    height: 549px;
    background: url(../assets/img/background.png);
