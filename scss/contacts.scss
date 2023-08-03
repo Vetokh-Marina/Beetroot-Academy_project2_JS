@@ -1,4 +1,6 @@
-.contacts {
+@import 'mixins';
+
+.contact {
    width: 770px;
    background: #FFFFFF;
    position: absolute;
@@ -7,13 +9,10 @@
    bottom: -160px;
    padding: 90px 60px 70px;
    text-align: center;
+   z-index: 1;
 
-   // & .title_2 {
-   //    margin-bottom: 42px;
-   // }
-
-   &__container {
-      @include flex(space-between, flex-start, row, 54px);
+   &__box {
+      @include flex(space-between, center, row, 54px);
    }
 
    &__info {
@@ -23,14 +22,19 @@
    &__text {
       font-family: 'Montserrat', sans-serif;
       line-height: 28px;
-      color: #000000;
       margin-bottom: 28px;
+      display: flex;
+      color: #000000;
+      gap: 8px;
+   }
+
+   &__link {
+      text-decoration: none;
+      color: #000000;
    }
 
    &__form {
-      display: flex;
-      flex-direction: column;
-      gap: 32px;
+      @include flex(0, 0, column, 32px);
    }
 
    &__info,
@@ -47,7 +51,7 @@
 
       &:focus {
          outline: none;
-         border-bottom-color: #2C4058;
+         border-bottom-color: #7E5AFF;
       }
    }
 
@@ -59,7 +63,7 @@
       padding: 12px 32px 12px 30px;
    }
 
-   &__icon {
+   &__img {
       vertical-align: middle;
    }
 }

@@ -21,6 +21,18 @@ $(document).ready(function () {
       speed: 1500,
       swipe: true,
       adaptiveHeight: true,
+      responsive: [
+         {
+            breakpoint: 1200,
+            settings: {
+               slidesToShow: 2,
+            },
+            breakpoint: 920,
+            settings: {
+               slidesToShow: 1,
+            },
+         },
+      ],
    });
 });
 

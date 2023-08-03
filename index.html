@@ -18,46 +18,50 @@
 
 <body>
    <header class="header">
-      <div class="container">
-         <nav class="nav">
-            <div class="logo">
-               <img src="./assets/svg/logo.svg" alt="logo" class="logo__img">
-            </div>
-            <div class="menu-block">
-               <ul class="menu">
-                  <li class="menu__item"><a href="#about-us" class="menu__link">ABOUT US</a></li>
-                  <li class="menu__item"><a href="#project" class="menu__link">PROJECTS</a></li>
-                  <li class="menu__item"><a href="#news" class="menu__link">NEWS</a></li>
-                  <li class="menu__item"><a href="#contact" class="menu__link">CONTACT</a></li>
-               </ul>
-            </div>
-            <div class="social">
-               <ul class="social__list list">
-                  <li class="list__item">
-                     <a href="#" class="list__link link">
-                        <svg width="16" height="14">
-                           <use xlink:href="./assets/sprite/sprite.svg#facebook" class="list__icon"></use>
-                        </svg>
-                     </a>
-                  </li>
-                  <li class="list__item">
-                     <a href="#" class="list__link link">
-                        <svg width="15" height="14">
-                           <use xlink:href="./assets/sprite/sprite.svg#twitter" class="list__icon"></use>
-                        </svg>
-                     </a>
-                  </li>
-                  <li class="list__item">
-                     <a href="#" class="list__link link">
-                        <svg width="10" height="16">
-                           <use xlink:href="./assets/sprite/sprite.svg#instagram" class="list__icon"></use>
-                        </svg>
-                     </a>
-                  </li>
-               </ul>
-            </div>
-         </nav>
-      </div>
+      <nav class="nav">
+         <div class="logo">
+            <a href="" class="logo__link"><img src="./assets/svg/logo.svg" alt="logo" class="logo__img"></a>
+         </div>
+         <div class="nav__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+         <div class="menu-block">
+            <ul class="menu">
+               <li class="menu__item"><a href="#about-us" class="menu__link">ABOUT US</a></li>
+               <li class="menu__item"><a href="#project" class="menu__link">PROJECTS</a></li>
+               <li class="menu__item"><a href="#news" class="menu__link">NEWS</a></li>
+               <li class="menu__item"><a href="#contact" class="menu__link">CONTACT</a></li>
+            </ul>
+         </div>
+         <div class="social">
+            <ul class="social__list list">
+               <li class="list__item">
+                  <a href="#" class="list__link link">
+                     <svg width="16" height="14">
+                        <use xlink:href="./assets/sprite/sprite.svg#facebook" class="list__icon"></use>
+                     </svg>
+                  </a>
+               </li>
+               <li class="list__item">
+                  <a href="#" class="list__link link">
+                     <svg width="15" height="14">
+                        <use xlink:href="./assets/sprite/sprite.svg#twitter" class="list__icon"></use>
+                     </svg>
+                  </a>
+               </li>
+               <li class="list__item">
+                  <a href="#" class="list__link link">
+                     <svg width="10" height="16">
+                        <use xlink:href="./assets/sprite/sprite.svg#instagram" class="list__icon"></use>
+                     </svg>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+
    </header>
    <main class="main">
       <section class="first-screen " id="about-us">
@@ -106,16 +110,14 @@
             </a>
          </div>
       </section>
-      <section class="projects" id="project">
+      <section class="projects section" id="project">
          <div class="content content-border">
-            <h2 class="content__title-2 title-2">WHAT WE DO</h2>
+            <h2 class="content__title-2 title-2 title-2_mg">WHAT WE DO</h2>
          </div>
-         <div class="content__decor content__decor-blue "></div>
          <article class="project ">
-            <span class="project__decor project__decor-blue "></span>
             <div class="container project-content content">
-               <div class="content__box">
-                  <img src="./assets/img/filipe-img.jpg" alt="filipe-img" class="content__img content__img-blue">
+               <div class="content__box content__img-blue ">
+                  <img src="./assets/img/filipe-img.jpg" alt="filipe-img" class="content__img ">
                </div>
                <div class="content__box">
                   <h4 class="content__title-4">ONE WORLD</h4>
@@ -136,8 +138,8 @@
          <article class="project ">
             <span class="project__decor project__decor-violet "></span>
             <div class="container project-content content content-revers">
-               <div class="content__box">
-                  <img src="./assets/img/builder.jpg" alt="filipe-img" class="content__img content__img-violet">
+               <div class="content__box content__img-violet">
+                  <img src="./assets/img/builder.jpg" alt="filipe-img" class="content__img">
                </div>
                <div class="content__box">
                   <h4 class="content__title-4">INTERNATIONAL</h4>
@@ -156,125 +158,128 @@
          </article>
          </div>
       </section>
-      <section class="latest-news" id="news">
-         <!-- <div class="container"> -->
+      <section class="latest-news section" id="news">
          <h2 class="content__title-2 content__title-2-news">LATEST NEWS</h2>
          <div class="slider-news">
-            <div class="news-item ">
-               <div class="news-item__box">
-                  <img src="./assets/img/img-1.jpg" alt="lauren">
+            <div class="slider-news__card card">
+               <div class="card__img">
+                  <img src="./assets/img/img-1.jpg" alt="Window" />
                </div>
-               <div class="news-info content">
-                  <h4 class="content__title-4 news-item__title-4">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h4>
-                  <p class="content__text news-info__text">Free directories: directories are perfect for customers
-                     that are searching
-                     for...</p>
-                  <div class="news-autor">
-                     <img src="./assets/img/autor-1.png" alt="autor-1" class="news-autor__img">
-                     <div class="news-autor__info info-autor">
-                        <p class="info-autor__name">ALJA BRUN</p>
-                        <p class="info-autor__date">20 Jan 2020</p>
+               <div class="card__content">
+                  <h4 class="card__title">
+                     SEE THE UNMATCHED BEAUTY OF THE GREAT.
+                  </h4>
+                  <p class="card__text">
+                     Free directories: directories are perfect for customers
+                     that are searching for...
+                  </p>
+                  <div class="card__sign sign">
+                     <div class="sign__photo">
+                        <img src="./assets/img/autor-1.png" alt="Photo author" />
+                     </div>
+                     <div class="sign__descr descr">
+                        <div class="descr__name">ALJA BRUN</div>
+                        <div class="descr__data">20 Jan 2020</div>
                      </div>
                   </div>
                </div>
             </div>
-            <div class="news-item ">
-               <div class="news-item__box">
-                  <img src="./assets/img/img-2.jpg" alt="matthem">
+            <div class="slider-news__card card">
+               <div class="card__img">
+                  <img src="./assets/img/img-2.jpg" alt="Building" />
                </div>
-               <div class="news-info content">
-                  <h4 class="content__title-4 news-item__title-4">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h4>
-                  <p class="content__text news-info__text">Free directories: directories are perfect for customers
-                     that are searching
-                     for...</p>
-                  <div class="news-autor">
-                     <img src="./assets/img/autor-2.png" alt="autor-2" class="news-autor__img">
-                     <div class="news-autor__info info-autor">
-                        <p class="info-autor__name">ALJA BRUN</p>
-                        <p class="info-autor__date">20 Jan 2020</p>
+               <div class="card__content">
+                  <h4 class="card__title">
+                     EFFECTIVE ADVERTISING POINTERS.
+                  </h4>
+                  <p class="card__text">
+                     Having a home based business is a wonderful asset to
+                     your life...
+                  </p>
+                  <div class="card__sign sign">
+                     <div class="sign__photo">
+                        <img src="./assets/img/autor-2.png" alt="Photo author" />
                      </div>
-                  </div>
-               </div>
-
-            </div>
-            <div class="news-item ">
-               <div class="news-item__box">
-                  <img src="./assets/img/img-3.jpg" alt="joel-filipe">
-               </div>
-               <div class="news-info content">
-                  <h4 class="content__title-4 news-item__title-4">HYPNOTIZE YOURSELF INTO THE GHOST.</h4>
-                  <p class="content__text news-info__text">There are many things that are important to catalog
-                     design...</p>
-                  <div class="news-autor">
-                     <img src="./assets/img/autor-3.png" alt="autor-3" class="news-autor__img">
-                     <div class="news-autor__info info-autor">
-                        <p class="info-autor__name">ALICE WARD</p>
-                        <p class="info-autor__date">30 Nov 2019</p>
-                     </div>
-                  </div>
-               </div>
-
-            </div>
-            <div class="news-item ">
-               <div class="news-item__box">
-                  <img src="./assets/img/img-1.jpg" alt="lauren">
-               </div>
-               <div class="news-info content">
-                  <h4 class="content__title-4 news-item__title-4">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h4>
-                  <p class="content__text news-info__text">Free directories: directories are perfect for customers
-                     that are searching
-                     for...</p>
-                  <div class="news-autor">
-                     <img src="./assets/img/autor-1.png" alt="autor-1" class="news-autor__img">
-                     <div class="news-autor__info info-autor">
-                        <p class="info-autor__name">ALJA BRUN</p>
-                        <p class="info-autor__date">20 Jan 2020</p>
+                     <div class="sign__descr descr">
+                        <div class="descr__name">DOMINIC FREEMAN</div>
+                        <div class="descr__data">13 Dec 2019</div>
                      </div>
                   </div>
                </div>
             </div>
-            <div class="news-item ">
-               <div class="news-item__box">
-                  <img src="./assets/img/img-3.jpg" alt="joel-filipe">
+            <div class="slider-news__card card">
+               <div class="card__img">
+                  <img src="./assets/img/img-3.jpg" alt="Building" />
                </div>
-               <div class="news-info content">
-                  <h4 class="content__title-4 news-item__title-4">HYPNOTIZE YOURSELF INTO THE GHOST.</h4>
-                  <p class="content__text news-info__text">There are many things that are important to catalog
-                     design...</p>
-                  <div class="news-autor">
-                     <img src="./assets/img/autor-3.png" alt="autor-3" class="news-autor__img">
-                     <div class="news-autor__info info-autor">
-                        <p class="info-autor__name">ALICE WARD</p>
-                        <p class="info-autor__date">30 Nov 2019</p>
+               <div class="card__content">
+                  <h4 class="card__title">
+                     HYPNOTIZE YOURSELF INTO THE GHOST.
+                  </h4>
+                  <p class="card__text">
+                     Having a home based business is a wonderful asset to
+                     your life...
+                  </p>
+                  <div class="card__sign sign">
+                     <div class="sign__photo">
+                        <img src="./assets/img/autor-3.png" alt="Photo author" />
+                     </div>
+                     <div class="sign__descr descr">
+                        <div class="descr__name">ALICE WARD</div>
+                        <div class="descr__data">30 Nov 2019</div>
                      </div>
                   </div>
                </div>
             </div>
-            <div class="news-item ">
-               <div class="news-item__box">
-                  <img src="./assets/img/img-2.jpg" alt="matthem">
+            <div class="slider-news__card card">
+               <div class="card__img">
+                  <img src="./assets/img/img-2.jpg" alt="Window" />
                </div>
-               <div class="news-info content">
-                  <h4 class="content__title-4 news-item__title-4">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h4>
-                  <p class="content__text news-info__text">Free directories: directories are perfect for customers
-                     that are searching
-                     for...</p>
-                  <div class="news-autor">
-                     <img src="./assets/img/autor-2.png" alt="autor-2" class="news-autor__img">
-                     <div class="news-autor__info info-autor">
-                        <p class="info-autor__name">ALJA BRUN</p>
-                        <p class="info-autor__date">20 Jan 2020</p>
+               <div class="card__content">
+                  <h4 class="card__title">
+                     SEE THE UNMATCHED BEAUTY OF THE GREAT.
+                  </h4>
+                  <p class="card__text">
+                     Free directories: directories are perfect for customers
+                     that are searching for...
+                  </p>
+                  <div class="card__sign sign">
+                     <div class="sign__photo">
+                        <img src="./assets/img/autor-2.png" alt="Photo author" />
+                     </div>
+                     <div class="sign__descr descr">
+                        <div class="descr__name">ALJA BRUN</div>
+                        <div class="descr__data">20 Jan 2020</div>
                      </div>
                   </div>
                </div>
-
+            </div>
+            <div class="slider-news__card card">
+               <div class="card__img">
+                  <img src="./assets/img/img-1.jpg" alt="Building" />
+               </div>
+               <div class="card__content">
+                  <h4 class="card__title">
+                     EFFECTIVE ADVERTISING POINTERS.
+                  </h4>
+                  <p class="card__text">
+                     Having a home based business is a wonderful asset to
+                     your life...
+                  </p>
+                  <div class="card__sign sign">
+                     <div class="sign__photo">
+                        <img src="./assets/img/autor-1.png" alt="Photo author" />
+                     </div>
+                     <div class="sign__descr descr">
+                        <div class="descr__name">DOMINIC FREEMAN</div>
+                        <div class="descr__data">13 Dec 2019</div>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
-         <!-- </div> -->
-
       </section>
-      <section class="gallery">
-         <h2 class="content__title-2 title-2">GALLERY</h2>
+      <section class="gallery section">
+         <h2 class="content__title-2 title-2 title-2_mg ">GALLERY</h2>
          <div class="gallery__box">
             <div class="gallery__item gallery__item_dob-row">
                <a data-fslightbox="gallery__link" href="./assets/img/gal-1.jpg">
@@ -305,31 +310,43 @@
          <div class="gallery__box-hide"></div>
          <button class="btn gallery__btn">SEE MORE</button>
       </section>
-      <section class="contacts" id="contacts">
-         <h2 class="content__title-2 ">GET IN TOUCH</h2>
-         <div class="contacts__container">
-            <div class="contacts__info">
-               <p class="contacts__text">
+      <section class="contact content" id="contacts">
+         <h2 class=" content__title-2 title-2 ">GET IN TOUCH</h2>
+         <div class="contact__box">
+            <div class="contact__info">
+               <p class="contact__text">
+                  <img src="./assets/svg/location-1.svg " alt="Location" class="contact__img" />
                   91 Nolan Extensions Suite 670
                </p>
-               <p class="contacts__text">
-                  +001 356-868-2454
+
+               <p class="contact__text">
+                  <img src="./assets/svg/phone.svg" alt="Phone" class="contact__img" />
+                  <a href="tel:+001 356-868-2454" class="contact__link"> +001 356-868-2454</a>
                </p>
-               <p class="contacts__text">
-                  montichello@service.com
+               <p class="contact__text">
+                  <img src="./assets/svg/email.svg" alt="Email" class="contact__img" />
+                  <a href="mailto:montichello@service.com" class="contact__link">montichello@service.com</a>
                </p>
-               <p class="contacts__text">
+               <p class="contact__text">
+                  <img src="./assets/svg/time.svg" alt="Time" class="contact__img" />
                   From 07:05AM to 19:30PM
                </p>
             </div>
-            <form class="contacts__form">
-               <input type="text" class="input" placeholder="Name">
+            <form class="contact__form form">
+               <input type="text" class="input" placeholder="Mollie Medina">
                <input type="email" class="input" placeholder="Email">
                <button type="submit" class="btn btn-submit">SUBMIT</button>
             </form>
          </div>
+         </div>
+
       </section>
-      <section class="map"></section>
+      <section class="map map__location">
+         <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164152.87938407835!2d36.12101544945285!3d49.99469535686387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09f63ab0f8b%3A0x2d4c18681aa4be0a!2z0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1690911680283!5m2!1sru!2sua"
+            width="100%" height="700" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
    </main>
    <footer class="footer">
       <div class="footer__logo logo">
