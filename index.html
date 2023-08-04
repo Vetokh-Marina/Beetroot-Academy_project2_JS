@@ -19,7 +19,7 @@
 <body>
    <header class="header">
       <nav class="nav">
-         <div class="logo">
+         <div class="logo header__logo">
             <a href="" class="logo__link"><img src="./assets/svg/logo.svg" alt="logo" class="logo__img"></a>
          </div>
          <div class="nav__burger">
@@ -27,38 +27,40 @@
             <span></span>
             <span></span>
          </div>
-         <div class="menu-block">
-            <ul class="menu">
-               <li class="menu__item"><a href="#about-us" class="menu__link">ABOUT US</a></li>
-               <li class="menu__item"><a href="#project" class="menu__link">PROJECTS</a></li>
-               <li class="menu__item"><a href="#news" class="menu__link">NEWS</a></li>
-               <li class="menu__item"><a href="#contact" class="menu__link">CONTACT</a></li>
-            </ul>
-         </div>
-         <div class="social">
-            <ul class="social__list list">
-               <li class="list__item">
-                  <a href="#" class="list__link link">
-                     <svg width="16" height="14">
-                        <use xlink:href="./assets/sprite/sprite.svg#facebook" class="list__icon"></use>
-                     </svg>
-                  </a>
-               </li>
-               <li class="list__item">
-                  <a href="#" class="list__link link">
-                     <svg width="15" height="14">
-                        <use xlink:href="./assets/sprite/sprite.svg#twitter" class="list__icon"></use>
-                     </svg>
-                  </a>
-               </li>
-               <li class="list__item">
-                  <a href="#" class="list__link link">
-                     <svg width="10" height="16">
-                        <use xlink:href="./assets/sprite/sprite.svg#instagram" class="list__icon"></use>
-                     </svg>
-                  </a>
-               </li>
-            </ul>
+         <div class="div">
+            <div class="menu-block">
+               <ul class="menu">
+                  <li class="menu__item"><a href="#about-us" class="menu__link">ABOUT US</a></li>
+                  <li class="menu__item"><a href="#project" class="menu__link">PROJECTS</a></li>
+                  <li class="menu__item"><a href="#news" class="menu__link">NEWS</a></li>
+                  <li class="menu__item"><a href="#contact" class="menu__link">CONTACT</a></li>
+               </ul>
+            </div>
+            <div class="social">
+               <ul class="social__list list">
+                  <li class="list__item">
+                     <a href="#" class="list__link link">
+                        <svg width="16" height="14">
+                           <use xlink:href="./assets/sprite/sprite.svg#facebook" class="list__icon"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="list__item">
+                     <a href="#" class="list__link link">
+                        <svg width="15" height="14">
+                           <use xlink:href="./assets/sprite/sprite.svg#twitter" class="list__icon"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="list__item">
+                     <a href="#" class="list__link link">
+                        <svg width="10" height="16">
+                           <use xlink:href="./assets/sprite/sprite.svg#instagram" class="list__icon"></use>
+                        </svg>
+                     </a>
+                  </li>
+               </ul>
+            </div>
          </div>
       </nav>
 
@@ -111,7 +113,7 @@
          </div>
       </section>
       <section class="projects section" id="project">
-         <div class="content content-border">
+         <div class="content">
             <h2 class="content__title-2 title-2 title-2_mg">WHAT WE DO</h2>
          </div>
          <article class="project ">
@@ -163,23 +165,23 @@
          <div class="slider-news">
             <div class="slider-news__card card">
                <div class="card__img">
-                  <img src="./assets/img/img-1.jpg" alt="Window" />
+                  <img src="./assets/img/img-1.jpg" alt="Building" />
                </div>
                <div class="card__content">
-                  <h4 class="card__title">
-                     SEE THE UNMATCHED BEAUTY OF THE GREAT.
+                  <h4 class="card__title content__title-4">
+                     SEE THE UNMATCHED BEAUTY OF THE.
                   </h4>
                   <p class="card__text">
-                     Free directories: directories are perfect for customers
+                     Free directories: directories customers
                      that are searching for...
                   </p>
-                  <div class="card__sign sign">
-                     <div class="sign__photo">
-                        <img src="./assets/img/autor-1.png" alt="Photo author" />
+                  <div class="card__info autor">
+                     <div class="autor__photo">
+                        <img src="./assets/img/autor-1.png" alt="author" />
                      </div>
-                     <div class="sign__descr descr">
-                        <div class="descr__name">ALJA BRUN</div>
-                        <div class="descr__data">20 Jan 2020</div>
+                     <div class="autor__info">
+                        <div class="autor__name">ALJA BRUN</div>
+                        <div class="autor__data">20 Jan 2020</div>
                      </div>
                   </div>
                </div>
@@ -189,20 +191,20 @@
                   <img src="./assets/img/img-2.jpg" alt="Building" />
                </div>
                <div class="card__content">
-                  <h4 class="card__title">
+                  <h4 class="card__title content__title-4">
                      EFFECTIVE ADVERTISING POINTERS.
                   </h4>
                   <p class="card__text">
                      Having a home based business is a wonderful asset to
                      your life...
                   </p>
-                  <div class="card__sign sign">
-                     <div class="sign__photo">
-                        <img src="./assets/img/autor-2.png" alt="Photo author" />
+                  <div class="card__info autor">
+                     <div class="autor__photo">
+                        <img src="./assets/img/autor-2.png" alt="author" />
                      </div>
-                     <div class="sign__descr descr">
-                        <div class="descr__name">DOMINIC FREEMAN</div>
-                        <div class="descr__data">13 Dec 2019</div>
+                     <div class="autor__info">
+                        <div class="autor__name">DOMINIC FREEMAN</div>
+                        <div class="autor__data">13 Dec 2019</div>
                      </div>
                   </div>
                </div>
@@ -212,43 +214,43 @@
                   <img src="./assets/img/img-3.jpg" alt="Building" />
                </div>
                <div class="card__content">
-                  <h4 class="card__title">
-                     HYPNOTIZE YOURSELF INTO THE GHOST.
+                  <h4 class="card__title content__title-4">
+                     HYPNOTIZE YOURSELF INTO THE.
                   </h4>
                   <p class="card__text">
                      Having a home based business is a wonderful asset to
                      your life...
                   </p>
-                  <div class="card__sign sign">
-                     <div class="sign__photo">
-                        <img src="./assets/img/autor-3.png" alt="Photo author" />
+                  <div class="card__info autor">
+                     <div class="autor__photo">
+                        <img src="./assets/img/autor-3.png" alt="author" />
                      </div>
-                     <div class="sign__descr descr">
-                        <div class="descr__name">ALICE WARD</div>
-                        <div class="descr__data">30 Nov 2019</div>
+                     <div class="autor__info">
+                        <div class="autor__name">ALICE WARD</div>
+                        <div class="autor__data">30 Nov 2019</div>
                      </div>
                   </div>
                </div>
             </div>
             <div class="slider-news__card card">
                <div class="card__img">
-                  <img src="./assets/img/img-2.jpg" alt="Window" />
+                  <img src="./assets/img/img-2.jpg" alt="Building" />
                </div>
                <div class="card__content">
-                  <h4 class="card__title">
-                     SEE THE UNMATCHED BEAUTY OF THE GREAT.
+                  <h4 class="card__title content__title-4">
+                     SEE THE UNMATCHED BEAUTY OF THE.
                   </h4>
                   <p class="card__text">
-                     Free directories: directories are perfect for customers
+                     Free directories: directories customers
                      that are searching for...
                   </p>
-                  <div class="card__sign sign">
-                     <div class="sign__photo">
-                        <img src="./assets/img/autor-2.png" alt="Photo author" />
+                  <div class="card__info autor">
+                     <div class="autor__photo">
+                        <img src="./assets/img/autor-2.png" alt="author" />
                      </div>
-                     <div class="sign__descr descr">
-                        <div class="descr__name">ALJA BRUN</div>
-                        <div class="descr__data">20 Jan 2020</div>
+                     <div class="autor__info">
+                        <div class="autor__name">ALJA BRUN</div>
+                        <div class="autor__data">20 Jan 2020</div>
                      </div>
                   </div>
                </div>
@@ -258,20 +260,20 @@
                   <img src="./assets/img/img-1.jpg" alt="Building" />
                </div>
                <div class="card__content">
-                  <h4 class="card__title">
+                  <h4 class="card__title content__title-4">
                      EFFECTIVE ADVERTISING POINTERS.
                   </h4>
                   <p class="card__text">
                      Having a home based business is a wonderful asset to
                      your life...
                   </p>
-                  <div class="card__sign sign">
-                     <div class="sign__photo">
-                        <img src="./assets/img/autor-1.png" alt="Photo author" />
+                  <div class="card__info autor">
+                     <div class="autor__photo">
+                        <img src="./assets/img/autor-1.png" alt="author" />
                      </div>
-                     <div class="sign__descr descr">
-                        <div class="descr__name">DOMINIC FREEMAN</div>
-                        <div class="descr__data">13 Dec 2019</div>
+                     <div class="autor__info">
+                        <div class="autor__name">DOMINIC FREEMAN</div>
+                        <div class="autor__data">13 Dec 2019</div>
                      </div>
                   </div>
                </div>

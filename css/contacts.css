@@ -10,12 +10,26 @@
   text-align: center;
   z-index: 1;
 }
+@media screen and (max-width: 768px) {
+  .contact {
+    width: 650px;
+  }
+}
 .contact__box {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   gap: 54px;
+}
+@media screen and (max-width: 768px) {
+  .contact__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 .contact__info {
   text-align: left;
@@ -59,6 +73,11 @@
   font-size: 18px;
   line-height: 1.5;
   padding: 12px 32px 12px 30px;
+}
+@media screen and (max-width: 768px) {
+  .contact .btn-submit {
+    margin: 0 auto;
+  }
 }
 .contact__img {
   vertical-align: middle;

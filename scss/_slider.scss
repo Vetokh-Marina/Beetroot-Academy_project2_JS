@@ -42,6 +42,11 @@
    position: absolute;
    top: 40%;
    right: 40px;
+
+   @media screen and (max-width: 1200px) {
+      top: 37%;
+      right: 75px;
+   }
 }
 
 .slick-dots li.slick-active button {
@@ -77,12 +82,15 @@
 
       &:hover {
          background-color: #FFF;
-         // transform: scale(1.2);
       }
 
       &:hover .scroll__icon {
          fill: #7E5AFF;
 
+      }
+
+      @media screen and (max-width: 992px) {
+         bottom: 100px;
       }
    }
 
@@ -95,14 +103,6 @@
    position: relative;
    padding: 0 115px;
 }
-
-// .slider-news.slider-arrow {
-//    position: absolute;
-//    top: 50%;
-//    z-index: 2;
-//    font-size: 0;
-// }
-
 
 .slider-news .slick-track {
    display: flex;
@@ -131,31 +131,42 @@
    position: absolute;
    top: 50%;
    transform: translateY(-50%);
-   z-index: 3;
+   z-index: 1;
    font-size: 0;
+   border: 1px solid #FFF;
+   background: none;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   opacity: 0.5;
 
-
-   &::before {
-      content: url(../assets/svg/prev.svg);
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+   &:hover {
+      border: 2px solid #fff;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      opacity: 1;
    }
-
-
 }
 
 .slick-prev {
-   left: -60px;
+   right: 3%;
+
+   &::before {
+      content: url("../assets/svg/next.svg");
+   }
+
+   @media screen and (max-width: 1200px) {
+      right: 6%;
+   }
 }
 
 .slick-next {
-   position: relative;
-   left: none;
-   right: -60px;
+   left: 3%;
 
    &::before {
-      content: url(../assets/svg/next.svg);
+      content: url("../assets/svg/prev.svg");
+   }
+
+   @media screen and (max-width: 1200px) {
+      left: 6%;
    }
 }

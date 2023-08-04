@@ -20,14 +20,20 @@ $(document).ready(function () {
       dots: true,
       speed: 1500,
       swipe: true,
+      arrows: true,
       adaptiveHeight: true,
       responsive: [
          {
             breakpoint: 1200,
             settings: {
-               slidesToShow: 2,
+               slidesToShow: 3,
             },
-            breakpoint: 920,
+            breakpoint: 992,
+            settings: {
+               slidesToShow: 2,
+               arrows: false,
+            },
+            breakpoint: 768,
             settings: {
                slidesToShow: 1,
             },
