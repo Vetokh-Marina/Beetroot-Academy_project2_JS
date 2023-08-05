@@ -604,7 +604,7 @@ input {
 .header__burger {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 870px) {
   .header__burger {
     position: relative;
     display: block;
@@ -727,7 +727,7 @@ img {
     gap: 0;
   }
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 870px) {
   .header {
     display: flex;
     justify-content: space-between;
@@ -768,16 +768,16 @@ img {
     gap: 20px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 870px) {
   .nav {
     display: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 870px) {
   .nav {
     position: fixed;
     top: 15px;
-    left: -110%;
+    left: -120%;
     width: 100%;
     height: 100%;
     padding: 70px 0 0 0;
@@ -788,7 +788,7 @@ img {
     left: 80px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 870px) {
   .nav-social {
     background-color: rgba(126, 90, 255, 0.8588235294);
     display: flex;
@@ -814,7 +814,7 @@ img {
     padding: 0;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 870px) {
   .menu {
     background-color: rgba(126, 90, 255, 0.8588235294);
     padding: 30px 0;
