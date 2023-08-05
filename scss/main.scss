@@ -62,13 +62,9 @@ img {
    transform: translate(50px);
    padding: 0 30px;
 
-   @media screen and (max-width: 992px) {
-      @include flex(space-between, center, row, 0);
-   }
-
-   @media screen and (max-width: 580px) {
-      @include flex(space-between, center, row, 0);
-   }
+   // @media screen and (max-width: 992px) {
+   //    @include flex(space-between, center, row, 0);
+   // }
 }
 
 
