@@ -1,7 +1,7 @@
 .header__burger {
   display: none;
 }
-@media (max-width: 580px) {
+@media (max-width: 768px) {
   .header__burger {
     position: relative;
     display: block;

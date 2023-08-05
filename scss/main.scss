@@ -66,6 +66,10 @@ img {
       @include flex(space-between, center, column, 0);
    }
 
+   @media screen and (max-width: 769px) {
+      @include flex(space-between, center, row, 0);
+   }
+
    @media screen and (max-width: 580px) {
       @include flex(space-between, center, row, 0);
    }
@@ -85,7 +89,7 @@ img {
       @include flex(space-between, center, column, 20px);
    }
 
-   @media screen and (max-width: 580px) {
+   @media screen and (max-width: 768px) {
       display: none;
    }
 
