@@ -26,6 +26,10 @@
       z-index: 2;
       width: 100%;
       text-align: center;
+
+      @media screen and (max-width: 992px) {
+         top: 250px;
+      }
    }
 
    &__img {
@@ -41,13 +45,26 @@
    list-style: none;
    position: absolute;
    top: 40%;
-   right: 40px;
+   right: 50px;
 
    @media screen and (max-width: 1200px) {
       top: 37%;
       right: 75px;
    }
+
+   @media screen and (max-width: 950px) {
+      @include flex(center, center, row, 20px);
+      top: 70%;
+      left: 50%;
+      transform: translateX(-50%);
+   }
+
+   @media screen and (max-width: 768px) {
+      top: 75%;
+   }
 }
+
+
 
 .slick-dots li.slick-active button {
    background-color: #FFF;
@@ -90,7 +107,11 @@
       }
 
       @media screen and (max-width: 992px) {
-         bottom: 100px;
+         bottom: 50px;
+      }
+
+      @media screen and (max-width: 768px) {
+         bottom: 30px;
       }
    }
 

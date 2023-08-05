@@ -1,84 +1,101 @@
 .contact {
-  width: 770px;
-  background: #FFFFFF;
+  position: relative;
+}
+
+.data {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: -160px;
-  padding: 90px 60px 70px;
-  text-align: center;
+  top: 400px;
+  width: 48%;
+  padding: 5.5vw 3.5vw;
+  line-height: 50px;
+  line-height: 1.55;
+  background-color: #fff;
   z-index: 1;
 }
-@media screen and (max-width: 768px) {
-  .contact {
-    width: 650px;
+@media screen and (max-width: 1200px) {
+  .data {
+    top: 400px;
   }
 }
-.contact__box {
+@media screen and (max-width: 768px) {
+  .data {
+    width: 60%;
+    padding: 6.5vw 0.5vw;
+  }
+}
+@media screen and (max-width: 578px) {
+  .data {
+    left: 50%;
+    width: 90%;
+  }
+}
+.data__descr {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 1.5vw;
+  flex-wrap: wrap;
+}
+.data__title {
+  margin-bottom: 42px;
+}
+@media screen and (max-width: 992px) {
+  .data__title {
+    margin: 10px 0 20px;
+    font-size: 30px;
+  }
+}
+
+.descr .text {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  gap: 54px;
-}
-@media screen and (max-width: 768px) {
-  .contact__box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    gap: 40px;
-  }
-}
-.contact__info {
-  text-align: left;
-}
-.contact__text {
-  font-family: "Montserrat", sans-serif;
-  line-height: 28px;
-  margin-bottom: 28px;
-  display: flex;
-  color: #000000;
-  gap: 8px;
-}
-.contact__link {
-  text-decoration: none;
-  color: #000000;
-}
-.contact__form {
-  display: flex;
-  justify-content: 0;
-  align-items: 0;
+  align-items: flex-start;
   flex-direction: column;
-  gap: 32px;
+  gap: 10px;
+  height: 196px;
 }
-.contact__info, .contact__form {
-  width: 50%;
+.descr .text img {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
 }
-.contact .input {
-  font-family: "Montserrat", sans-serif;
-  color: #000000;
-  padding: 0 0 14px;
-  border: none;
-  border-bottom: 1px solid rgba(44, 64, 88, 0.2);
+.descr a {
+  text-decoration: none;
+  color: #2C4058;
 }
-.contact .input:focus {
-  outline: none;
-  border-bottom-color: #7E5AFF;
+
+.form {
+  margin: 0;
+  flex-wrap: wrap;
 }
-.contact .btn-submit {
-  width: 45%;
-  margin-left: auto;
+.form__btn {
   font-size: 18px;
   line-height: 1.5;
-  padding: 12px 32px 12px 30px;
+  padding: 12px 30px;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
-@media screen and (max-width: 768px) {
-  .contact .btn-submit {
-    margin: 0 auto;
+@media screen and (max-width: 992px) {
+  .form__btn {
+    padding: 10px 30px;
+    font-size: 14px;
   }
 }
-.contact__img {
-  vertical-align: middle;
+
+input {
+  display: block;
+  border: none;
+  border-bottom: 2px solid #9da2a8;
+  width: 19vw;
+  height: 41px;
+  padding: 5px;
+}
+@media screen and (max-width: 992px) {
+  input {
+    width: 100%;
+  }
 }

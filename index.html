@@ -18,52 +18,47 @@
 
 <body>
    <header class="header">
+      <div class="logo header__logo">
+         <a href="" class="logo__link"><img src="./assets/svg/logo.svg" alt="logo" class="logo__img"></a>
+      </div>
       <nav class="nav">
-         <div class="logo header__logo">
-            <a href="" class="logo__link"><img src="./assets/svg/logo.svg" alt="logo" class="logo__img"></a>
+         <div class="menu-block">
+            <ul class="menu">
+               <li class="menu__item"><a href="#about-us" class="menu__link">ABOUT US</a></li>
+               <li class="menu__item"><a href="#project" class="menu__link">PROJECTS</a></li>
+               <li class="menu__item"><a href="#news" class="menu__link">NEWS</a></li>
+               <li class="menu__item"><a href="#contact" class="menu__link">CONTACT</a></li>
+            </ul>
          </div>
-         <div class="nav__burger">
-            <span></span>
-            <span></span>
-            <span></span>
-         </div>
-         <div class="div">
-            <div class="menu-block">
-               <ul class="menu">
-                  <li class="menu__item"><a href="#about-us" class="menu__link">ABOUT US</a></li>
-                  <li class="menu__item"><a href="#project" class="menu__link">PROJECTS</a></li>
-                  <li class="menu__item"><a href="#news" class="menu__link">NEWS</a></li>
-                  <li class="menu__item"><a href="#contact" class="menu__link">CONTACT</a></li>
-               </ul>
-            </div>
-            <div class="social">
-               <ul class="social__list list">
-                  <li class="list__item">
-                     <a href="#" class="list__link link">
-                        <svg width="16" height="14">
-                           <use xlink:href="./assets/sprite/sprite.svg#facebook" class="list__icon"></use>
-                        </svg>
-                     </a>
-                  </li>
-                  <li class="list__item">
-                     <a href="#" class="list__link link">
-                        <svg width="15" height="14">
-                           <use xlink:href="./assets/sprite/sprite.svg#twitter" class="list__icon"></use>
-                        </svg>
-                     </a>
-                  </li>
-                  <li class="list__item">
-                     <a href="#" class="list__link link">
-                        <svg width="10" height="16">
-                           <use xlink:href="./assets/sprite/sprite.svg#instagram" class="list__icon"></use>
-                        </svg>
-                     </a>
-                  </li>
-               </ul>
-            </div>
+         <div class="social nav-social">
+            <ul class="social__list list">
+               <li class="list__item">
+                  <a href="#" class="list__link link">
+                     <svg width="16" height="14">
+                        <use xlink:href="./assets/sprite/sprite.svg#facebook" class="list__icon"></use>
+                     </svg>
+                  </a>
+               </li>
+               <li class="list__item">
+                  <a href="#" class="list__link link">
+                     <svg width="15" height="14">
+                        <use xlink:href="./assets/sprite/sprite.svg#twitter" class="list__icon"></use>
+                     </svg>
+                  </a>
+               </li>
+               <li class="list__item">
+                  <a href="#" class="list__link link">
+                     <svg width="10" height="16">
+                        <use xlink:href="./assets/sprite/sprite.svg#instagram" class="list__icon"></use>
+                     </svg>
+                  </a>
+               </li>
+            </ul>
          </div>
       </nav>
-
+      <div class="header__burger">
+         <span></span>
+      </div>
    </header>
    <main class="main">
       <section class="first-screen " id="about-us">
@@ -117,7 +112,7 @@
             <h2 class="content__title-2 title-2 title-2_mg">WHAT WE DO</h2>
          </div>
          <article class="project ">
-            <div class="container project-content content">
+            <div class="project-content content">
                <div class="content__box content__img-blue ">
                   <img src="./assets/img/filipe-img.jpg" alt="filipe-img" class="content__img ">
                </div>
@@ -137,12 +132,8 @@
                </div>
             </div>
          </article>
-         <article class="project ">
-            <span class="project__decor project__decor-violet "></span>
-            <div class="container project-content content content-revers">
-               <div class="content__box content__img-violet">
-                  <img src="./assets/img/builder.jpg" alt="filipe-img" class="content__img">
-               </div>
+         <article class="project">
+            <div class="project-content content">
                <div class="content__box">
                   <h4 class="content__title-4">INTERNATIONAL</h4>
                   <h2 class="content__title-2">COMMERCE CENTRE</h2>
@@ -155,8 +146,10 @@
                         feet</a>
                   </div>
                </div>
+               <div class="content__box content__img-violet">
+                  <img src="./assets/img/builder.jpg" alt="filipe-img" class="content__img">
+               </div>
             </div>
-
          </article>
          </div>
       </section>
@@ -313,33 +306,34 @@
          <button class="btn gallery__btn">SEE MORE</button>
       </section>
       <section class="contact content" id="contacts">
-         <h2 class=" content__title-2 title-2 ">GET IN TOUCH</h2>
-         <div class="contact__box">
-            <div class="contact__info">
-               <p class="contact__text">
-                  <img src="./assets/svg/location-1.svg " alt="Location" class="contact__img" />
-                  91 Nolan Extensions Suite 670
-               </p>
+         <div class="contact__data data">
+            <h2 class="content__title-2 title-2">GET IN TOUCH</h2>
+            <div class="data__descr descr">
+               <div class="descr__text text">
+                  <p>
+                     <img src="./assets/svg/location-1.svg" alt="img" />
+                     91 Nolan Extensions Suite 670
+                  </p>
 
-               <p class="contact__text">
-                  <img src="./assets/svg/phone.svg" alt="Phone" class="contact__img" />
-                  <a href="tel:+001 356-868-2454" class="contact__link"> +001 356-868-2454</a>
-               </p>
-               <p class="contact__text">
-                  <img src="./assets/svg/email.svg" alt="Email" class="contact__img" />
-                  <a href="mailto:montichello@service.com" class="contact__link">montichello@service.com</a>
-               </p>
-               <p class="contact__text">
-                  <img src="./assets/svg/time.svg" alt="Time" class="contact__img" />
-                  From 07:05AM to 19:30PM
-               </p>
+                  <p>
+                     <img src="./assets/svg/phone.svg" alt="img" />
+                     <a href="tel:+001 356-868-2454"> +001 356-868-2454</a>
+                  </p>
+                  <p>
+                     <img src="./assets/svg/email.svg" alt="img" />
+                     <a href="mailto:montichello@service.com">montichello@service.com</a>
+                  </p>
+                  <p>
+                     <img src="./assets/svg/time.svg" alt="img" />
+                     From 07:05AM to 19:30PM
+                  </p>
+               </div>
+               <form class="descr__form form" action="#">
+                  <input id="userName" type="text" name="userName" placeholder="Mollie Medina" />
+                  <input id="userEmail" type="email" name="userEmail" placeholder="e-mail" />
+                  <button class="form__btn btn" type="submit">SUBMIT</button>
+               </form>
             </div>
-            <form class="contact__form form">
-               <input type="text" class="input" placeholder="Mollie Medina">
-               <input type="email" class="input" placeholder="Email">
-               <button type="submit" class="btn btn-submit">SUBMIT</button>
-            </form>
-         </div>
          </div>
 
       </section>

@@ -8,6 +8,13 @@ $(document).ready(function () {
       speed: 1500,
       slideToShow: 1,
       swipe: true,
+      responsive: [
+         {
+            breakpoint: 680,
+            settings: {
+               dots: false,
+            }
+         },]
    });
 });
 
@@ -24,21 +31,22 @@ $(document).ready(function () {
       adaptiveHeight: true,
       responsive: [
          {
-            breakpoint: 1200,
-            settings: {
-               slidesToShow: 3,
-            },
             breakpoint: 992,
             settings: {
                slidesToShow: 2,
+               slidesToScroll: 1,
                arrows: false,
-            },
+            }
+         },
+         {
             breakpoint: 768,
             settings: {
                slidesToShow: 1,
-            },
+               slidesToScroll: 1,
+               arrows: false,
+            }
          },
-      ],
+      ]
    });
 });
 
